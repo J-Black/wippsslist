@@ -1,0 +1,106 @@
+!mobile rule start here.
+
+!gamepress.gg
+gamepress.gg##.top-mobile-ad, .gamepress-boost-top-banner, #bottom-sticky-ad
+
+!engadget.com
+engadget.com##.Mx\(20px\)--sm.Bdbw\(0px\)--sm.Bdbw\(1px\).Bdbs\(s\).Bdbc\(engadgetGutter\).Py\(40px\)
+engadget.com##.Mih\(50px\).Bdbw\(1px\).Bdbs\(s\).Bdbc\(engadgetGray\).Bgc\(engadgetSteelGray\).Pb\(25px\).Pt\(30px\).Jc\(c\).Z\(1\).Pos\(r\).Ai\(st\).D\(f\)
+engadget.com##.D\(b\)\!--sm.D\(n\)
+engadget.com##.Mih\(250px\).Mb\(35px\).Mt\(15px\).Jc\(c\).Z\(1\).Pos\(r\).Ai\(st\).D\(f\)
+
+
+!mobile rule start here.
+
+!---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+!desktop rule start here.
+
+!socialblade.com
+socialblade.com##.socialblade-heartbeat
+socialblade.com##div[style="width: 300px; height: 250px; padding: 20px; background: #fff; margin-bottom: 20px; "]
+socialblade.com##div[style="width: 860px; min-height: 90px; height: auto; padding: 20px; background: #fff; float: left; margin: 00px 0px 10px 0px;"]
+socialblade.com##div[style="width: 860px; min-height: 90px; height: auto; padding: 20px; background: #fff; float: left; margin: 0px 0px 10px 0px;"]
+socialblade.com##.index-full.global-notification
+socialblade.com##.youtube-video-embed
+socialblade.com##.youtube-video-embed-network
+socialblade.com##div[style="width: 300px; background: #333; padding: 14px 20px; color:#fff; font-size: 9pt; text-transform: uppercase; font-weight: bold;"]
+socialblade.com##div[style="width: 300px; margin-top: 20px; background: #333; padding: 14px 20px; font-size: 9pt; text-transform: uppercase; color:#fff; font-weight: bold;"]
+socialblade.com##div[style="width: 300px; margin-top: 20px; background: #263238; padding: 20px; color:#90CAF9; text-transform: uppercase; font-size: 9pt; font-weight: bold;"]
+socialblade.com##div[style="width: 340px; background: #263238; font-size: 8pt;"]
+socialblade.com##div[style="width: 100%; height: 100px; background: #2d2d2d;"]
+!end-socialblade.com
+
+!fandom.com
+!this rule blocked div start with "siderail_". for end with use "$" 
+fandom.com##div[id^="siderail_"]
+!for more information go check https://www.w3schools.com/cssref/css_selectors.asp and https://crawlingrobotfortress.blogspot.com/2020/09/wildcard-selectors-in-ublock-origin.html
+
+!important! this is a css edit not a regular block
+fandom.com###bodyContent:style(width: 100% !important;)
+!check https://github.com/uBlockOrigin/uBlock-issues/issues/382 for more detail
+!end-fandom.com
+
+!wolframalpha.com
+wolframalpha.com##[href*="wolframalpha.com/pro/pricing/students"]
+wolframalpha.com##[href*="wolframalpha.com/tour"]
+wolframalpha.com##[href*="wolframalpha.com/problem-generator"]
+wolframalpha.com##[href*="wolfram.com/siteinfo"]
+wolframalpha.com##._1nCA1
+!end-wolframalpha.com
+
+!imageSite
+!image.roll sites
+!multiple sites rule
+fotokiz.com,silverpic.com,picdollar.com,imgbaron.com,imgsen.com,imgsto.com,kropic.com,kvador.com,picbaron.com,pics4you.net##.roll, .navbar-inner, h3, .tabberlive, br, div:nth-of-type(odd), div:nth-of-type(even), body > center, strong
+fotokiz.com,silverpic.com,picdollar.com,imgbaron.com,imgsen.com,imgsto.com,kropic.com,kvador.com,picbaron.com,picrok.com,pics4you.net##img:style(width: auto !important; height: auto !important;)
+fotokiz.com,silverpic.com,picdollar.com,imgbaron.com,imgsen.com,imgsto.com,kropic.com,kvador.com,picbaron.com,picrok.com,pics4you.net##.pic:style(border: 0 !important;)
+fotokiz.com,silverpic.com##.newsbar_reg
+picrok.com##span, br, .sinput, .navbar-inner, .adbwarning, .container, td > div, td:nth-of-type(1), div:nth-of-type(10), div:nth-of-type(11), #linkss
+picrok.com##div[style*="max-width:1024px;"]
+!picrok.com##div[style*="visibility: hidden;"]
+!try to block a form with invisible column but not work
+
+!required no-popup rule
+imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.side_imges, .qwrcb
+imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##div:style(margin: 0 !important; margin-left: 0 !important; margin-top: 0 !important;)
+imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.big_img:style(width: auto !important;)
+imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.padi:style(padding: 0 !important;)
+imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com###senjoka
+!imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##+js(acis, PopURL)
+!this is not work. for future ref:
+!function doOpen(_0x35c924) & http://imgflyer.xyz/assets/jquery.fir.js
+!http://a-kuma3.hatenablog.com/entry/ublock_origin_again_at_firefox#redirect-%E3%82%84-js-%E3%81%A7%E5%88%A9%E7%94%A8%E3%81%A7%E3%81%8D%E3%81%9D%E3%81%86%E3%81%AA%E3%82%84%E3%81%A4
+!
+!https://github.com/gorhill/uBlock/wiki/Resources-Library
+
+
+!top right multiclick
+imgtaxi.com##body:style(background: #fdfd96 !important;)
+imgdrive.net##body:style(background: #abcdef !important;)
+imgdrive.net,imgtaxi.com##canvas:nth-of-type(2), div.if, .logo, h1, .left-column > p, #menu, #menubutton, #image_details, .centered, #footer, div:nth-of-type(6), .imgDetails, .pgn-links, br, .sidebar
+imgdrive.net,imgtaxi.com##div[style*="width: 15px; height: 15px"]
+imgdrive.net,imgtaxi.com##.overlay_ad_link:style(text-align: center !important;)
+imgdrive.net,imgtaxi.com##div[style*="margin-right"]
+imgdrive.net,imgtaxi.com##div[style*="right: 30px;"]
+imgdrive.net,imgtaxi.com##img:style(width: auto !important; border: 0 !impportant;)
+imgdrive.net,imgtaxi.com##img.centred_resized:style(width: auto !important; border: 0 !important)
+!end-imageSite
+
+!randomShit
+||gateway.jerkmate.com^$script,1p
+!end-randomShit
+
+!googleMaps
+google.com##div[class*="Txmime"]
+google.com##div.wDYxhc:nth-of-type(5)
+!endGoogleMaps
+
+!YouTubeTVPopUp
+!youtube.com##ytd-popup-container paper-dialog:has-text(/Changes to YouTube’s Terms of Service|Check out your new Library|Get access to exclusive perks|How is your experience|How is YouTube today|Our Terms of Service have been updated|Rate your ads|Try it free|Try the YouTube Kids app|What is your biggest complaint|Which problems are you experiencing|You're signed out of YouTube|Join this channel and unlock members-only perks|YouTube TV/)
+!the above one seems not work at all.
+!https://www.reddit.com/r/uBlockOrigin/comments/hidtro/youtube_tv_and_comments/
+youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope
+!end-YouTubeTVPopUp
+
+!desktop rule end here.
