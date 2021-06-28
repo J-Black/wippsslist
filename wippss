@@ -1,4 +1,4 @@
-!mobile rule start here.
+!mobile rule starts here.
 
 !gamepress.gg
 gamepress.gg##.top-mobile-ad, .gamepress-boost-top-banner, #bottom-sticky-ad
@@ -10,11 +10,11 @@ engadget.com##.D\(b\)\!--sm.D\(n\)
 engadget.com##.Mih\(250px\).Mb\(35px\).Mt\(15px\).Jc\(c\).Z\(1\).Pos\(r\).Ai\(st\).D\(f\)
 
 
-!mobile rule start here.
+!mobile rule ends here.
 
 !---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-!desktop rule start here.
+!desktop rule starts here.
 
 !socialblade.com
 socialblade.com##.socialblade-heartbeat
@@ -100,7 +100,8 @@ google.com##div.wDYxhc:nth-of-type(5)
 !youtube.com##ytd-popup-container paper-dialog:has-text(/Changes to YouTube’s Terms of Service|Check out your new Library|Get access to exclusive perks|How is your experience|How is YouTube today|Our Terms of Service have been updated|Rate your ads|Try it free|Try the YouTube Kids app|What is your biggest complaint|Which problems are you experiencing|You're signed out of YouTube|Join this channel and unlock members-only perks|YouTube TV/)
 !the above one seems not work at all.
 !https://www.reddit.com/r/uBlockOrigin/comments/hidtro/youtube_tv_and_comments/
-youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope
+!youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope
+!the above rule blocked too much. need reconsider the rule
 !end-YouTubeTVPopUp
 
-!desktop rule end here.
+!desktop rule ends here.
