@@ -2,6 +2,7 @@
 
 !gamepress.gg
 gamepress.gg##.top-mobile-ad, .gamepress-boost-top-banner, #bottom-sticky-ad
+gamepress.gg###site-footer:style(padding: 0px 0px 0px !important;)
 
 !engadget.com
 engadget.com##.Mx\(20px\)--sm.Bdbw\(0px\)--sm.Bdbw\(1px\).Bdbs\(s\).Bdbc\(engadgetGutter\).Py\(40px\)
@@ -39,6 +40,11 @@ fandom.com##div[id^="siderail_"]
 !important! this is a css edit not a regular block
 fandom.com###bodyContent:style(width: 100% !important;)
 !check https://github.com/uBlockOrigin/uBlock-issues/issues/382 for more detail
+
+fandom.com##.banner-notifications-placeholder
+fandom.com##.marketplace.unified-search__result
+fandom.com##.WikiaBarWrapper
+fandom.com##body.wikia-bar-visible:style(padding-bottom: 0px !important;)
 !end-fandom.com
 
 !wolframalpha.com
@@ -52,33 +58,33 @@ wolframalpha.com##._1nCA1
 !imageSite
 !image.roll sites
 !multiple sites rule
-fotokiz.com,silverpic.com,picdollar.com,imgbaron.com,imgsen.com,imgsto.com,kropic.com,kvador.com,picbaron.com,pics4you.net##.roll, .navbar-inner, h3, .tabberlive, br, div:nth-of-type(odd), div:nth-of-type(even), body > center, strong
-fotokiz.com,silverpic.com,picdollar.com,imgbaron.com,imgsen.com,imgsto.com,kropic.com,kvador.com,picbaron.com,picrok.com,pics4you.net##img:style(width: auto !important; height: auto !important;)
-fotokiz.com,silverpic.com,picdollar.com,imgbaron.com,imgsen.com,imgsto.com,kropic.com,kvador.com,picbaron.com,picrok.com,pics4you.net##.pic:style(border: 0 !important;)
-fotokiz.com,silverpic.com##.newsbar_reg
-picrok.com##span, br, .sinput, .navbar-inner, .adbwarning, .container, td > div, td:nth-of-type(1), div:nth-of-type(10), div:nth-of-type(11), #linkss
-picrok.com##div[style*="max-width:1024px;"]
+imgstar.eu,fotokiz.com,silverpic.com,picdollar.com,imgbaron.com,imgsen.com,imgsto.com,kropic.com,kvador.com,picbaron.com,pics4you.net##.roll, .navbar-inner, h3, .tabberlive, br, div:nth-of-type(odd), div:nth-of-type(even), body > center, strong
+imgstar.eu,fotokiz.com,silverpic.com,picdollar.com,imgbaron.com,imgsen.com,imgsto.com,kropic.com,kvador.com,picbaron.com,picrok.com,pics4you.net##img:style(width: auto !important; height: auto !important;)
+imgstar.eu,fotokiz.com,silverpic.com,picdollar.com,imgbaron.com,imgsen.com,imgsto.com,kropic.com,kvador.com,picbaron.com,picrok.com,pics4you.net##.pic:style(border: 0 !important;)
+imgstar.eu,fotokiz.com,silverpic.com##.newsbar_reg
+imgstar.eu,picrok.com##span, br, .sinput, .navbar-inner, .adbwarning, .container, td > div, td:nth-of-type(1), div:nth-of-type(10), div:nth-of-type(11), #linkss
+imgstar.eu,picrok.com##div[style*="max-width:1024px;"]
 !picrok.com##div[style*="visibility: hidden;"]
 !try to block a form with invisible column but not work
 
 !required no-popup rule
-imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.side_imges, .qwrcb
-imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##div:style(margin: 0 !important; margin-left: 0 !important; margin-top: 0 !important;)
-imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.big_img:style(width: auto !important;)
-imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.padi:style(padding: 0 !important;)
-imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com###senjoka
+imgtrw.buzz,imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.qzxcdsfds
+imgtrw.buzz,imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.side_imges, .qwrcb
+imgtrw.buzz,imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##div:style(margin: 0 !important; margin-left: 0 !important; margin-top: 0 !important;)
+imgtrw.buzz,imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.big_img:style(width: auto !important;)
+imgtrw.buzz,imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##.padi:style(padding: 0 !important;)
+imgtrw.buzz,imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com###senjoka
 !imgflyer.xyz,imgwewo.xyz,imgdawgknuttz.com,imgviv.xyz,kekolangti.com##+js(acis, PopURL)
 !this is not work. for future ref:
 !function doOpen(_0x35c924) & http://imgflyer.xyz/assets/jquery.fir.js
 !http://a-kuma3.hatenablog.com/entry/ublock_origin_again_at_firefox#redirect-%E3%82%84-js-%E3%81%A7%E5%88%A9%E7%94%A8%E3%81%A7%E3%81%8D%E3%81%9D%E3%81%86%E3%81%AA%E3%82%84%E3%81%A4
-!
 !https://github.com/gorhill/uBlock/wiki/Resources-Library
 
 
 !top right multiclick
 imgtaxi.com##body:style(background: #fdfd96 !important;)
 imgdrive.net##body:style(background: #abcdef !important;)
-imgdrive.net,imgtaxi.com##canvas:nth-of-type(2), div.if, .logo, h1, .left-column > p, #menu, #menubutton, #image_details, .centered, #footer, div:nth-of-type(6), .imgDetails, .pgn-links, br, .sidebar
+imgdrive.net,imgtaxi.com##canvas:nth-of-type(2), div.if, .logo, h1, .left-column > p, #menu, #menubutton, #image_details, .centered, #footer, div:nth-of-type(6), .imgDetails, .pgn-links, br, .sidebar, #redirect-ab
 imgdrive.net,imgtaxi.com##div[style*="width: 15px; height: 15px"]
 imgdrive.net,imgtaxi.com##.overlay_ad_link:style(text-align: center !important;)
 imgdrive.net,imgtaxi.com##div[style*="margin-right"]
@@ -101,7 +107,16 @@ google.com##div.wDYxhc:nth-of-type(5)
 !the above one seems not work at all.
 !https://www.reddit.com/r/uBlockOrigin/comments/hidtro/youtube_tv_and_comments/
 !youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope
-!the above rule blocked too much. need reconsider the rule
+!the above rule blocked too much. need reconsider the ruleyoutube.com###main.ytd-mealbar-promo-renderer.style-scope
+youtube.com##.no-transition.ytd-mealbar-promo-renderer.style-scope
+youtube.com###content.yt-tooltip-renderer.style-scope
+youtube.com###yt-tooltip-renderer.style-scope.ytd-popup-container
+youtube.com###tp-yt-paper-button.style-scope.yt-button-renderer
+youtube.com###content.yt-bubble-hint-renderer.style-scope
+youtube.com##.yt-bubble-hint-renderer.style-scope.buttons
+!youtube.com###contentWrapper.style-scope.tp-yt-iron-dropdown
+!this one always hide setting
+youtube.com##.yt-tooltip-renderer.style-scope.buttons
 !end-YouTubeTVPopUp
 
 !desktop rule ends here.
