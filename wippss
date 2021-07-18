@@ -108,6 +108,7 @@ google.com##div.wDYxhc:nth-of-type(5)
 !https://www.reddit.com/r/uBlockOrigin/comments/hidtro/youtube_tv_and_comments/
 !youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope
 !the above rule blocked too much. need reconsider the ruleyoutube.com###main.ytd-mealbar-promo-renderer.style-scope
+
 youtube.com##.no-transition.ytd-mealbar-promo-renderer.style-scope
 youtube.com###content.yt-tooltip-renderer.style-scope
 youtube.com###yt-tooltip-renderer.style-scope.ytd-popup-container
